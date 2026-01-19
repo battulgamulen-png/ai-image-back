@@ -12,7 +12,7 @@ async function recognitionText(req, res) {
     }
 
     const chatCompletion = await client.chatCompletion({
-      model: "zai-org/GLM-4.7:novita",
+      model: "MiniMaxAI/MiniMax-M2.1:novita",
       messages: [
         { role: "system", content: "You are a helpful AI content creator." },
         { role: "user", content: prompt },
